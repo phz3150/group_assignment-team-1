@@ -1,0 +1,25 @@
+import numpy as np
+from math import sqrt
+import math
+
+
+def coordinates(x,R):
+    """Function that calculates all y coordinates of a circle
+    Input: array x & radius R
+    Output: all y coordinates of a circle """
+    
+    
+    for i in x:
+        y = sqrt( (R**2) - (i**2) )
+        print(y)
+        
+        
+def sphere_properties(R):
+    """Function that calculates the diameter and surface of a sphere
+    Input: radius R
+    Output: diameter & surface of a sphere """
+    
+    diameter = 2 * pi * R
+    surface = 4 * pi * (r**2)
+    
+    return (diameter, surface)
